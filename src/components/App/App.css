@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   background-image: url("../../images/bg3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;

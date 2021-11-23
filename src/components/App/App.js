@@ -33,7 +33,6 @@ const App = () => {
           <Route exact path="/details/" render={() => <Detail />} />
           <Route exact path="/error" render={() => <Error />} />
           <Route exact path="/readinglist" render={() => <ReadingList />} />
-          <Route render={() => <Error />} />
           </Switch>
         </AuthContextProvider>
       </QueryContextProvider>

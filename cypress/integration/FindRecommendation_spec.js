@@ -80,14 +80,13 @@ cy.get('.prompt').contains('Welcome to readME!')
 })
 
 it('The user should see a message if there are no search results to display', () => {
-  cy.get('input[type="text"]')
-    .type('Dune');
-
   cy.intercept('GET', 'https://www.googleapis.com/books/v1/volumes?q=Dune&maxResults=15&key=AIzaSyBf2vrFs43KCXYdALCcDGm_EeC-3BpS-5w', { fixture: 'noResults'})
-  .get('.search-form')
+  .get('input[type="text"]')
+  .type('Dune');
+  cy.get('.search-form')
   .submit()
-  .get('.card-container')
-  .contains('Sorry we didn\'t find any books.')
+  cy.get('.prompt-error')
+  .contains('We are sorry')
 }
 )
 

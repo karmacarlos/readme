@@ -1,7 +1,8 @@
 .recommendation-view {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  width: 100vw;
   min-width: 900px;
   min-height: 100vh;
   background-color: #f1f0f2;
@@ -13,7 +14,9 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  padding: 0 5%;
+  justify-content: space-between;
+  max-width: 1200px;
 }
 
 .p-prompt-recommendation {
@@ -37,11 +40,8 @@
   width: 55vw;
   min-width: 600px;
   opacity: 0.8;
-  background-color: wheat;
   border-radius: 25px;
-  box-shadow: rgba(72, 64, 64, 0.825) -10px 5px 25px 0px;
   padding: 30px;
-  --contentWidth: 70vw;
   overflow: scroll;
 }
 

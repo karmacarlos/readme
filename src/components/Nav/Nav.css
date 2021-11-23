@@ -6,6 +6,7 @@
   align-items: center;
   height: 3rem;
   background-color: #f29c5089;
+  width: 100vw;
 }
 
 .nav-bar ul {

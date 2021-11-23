@@ -54,23 +54,31 @@ const RecommendationView = () => {
     )
   })
 
-  return !error && query.category ? (
+  const conditionalRendering = () => {
+    if (!searchResults.length && !error) {
+      return <h2>...Loading...</h2>
+    } else if(!searchResults.length && error) {
+      return <h2>We couldn't find good readings with that book, try again with another book</h2>
+    } else {
+      return {recommendationCards}
+    }
+  }
+
+  return (
     <div className="recommendation-view">
       <Nav />
       <div className="display-body-recommendation">
         <p className="p-prompt-recommendation">
           Because you liked <b>{query.clickedTitle} </b>you might like these books:
         </p>
-      <div className="card-container-recommendation">
-        {!searchResults.length && <h1>...Loading...</h1>}
-        {!error < 1 ? <h2>We couldn't find good readings with that book, try again with another book</h2> :
-          recommendationCards}
+        <div className="card-container-recommendation">
+          {!searchResults.length && error && !error && <h1>...Loading...</h1>}
+          {error ? <h2>We couldn't find good readings with that book, try again with another book</h2> :
+            recommendationCards}
+        </div>
       </div>
     </div>
-    </div>
-  ) : (
-    <Redirect to="/error" />
-  )
+  ) 
 }
 
 export default RecommendationView
