@@ -54,9 +54,18 @@ To run Cypress tests:
 
 The React architecture is based on 18 functional components, we used 2 context to manage state globally using local storage and reducer functions to make these more readable and to pass just two values as props to any of our child components.
 
-## Illustrations
-![readme-screen-shots](https://user-images.githubusercontent.com/82873669/140862033-31ad423c-a0a9-4ba2-96ea-a93682b9b385.gif)
+If you're interested on seeing the planning and execution of this project you can take a look to the wire frame, architecture diagram and project board:
 
+- [Wire Frame](https://www.figma.com/file/PA6tXIvkU2iHS5Jbz7LhV9/Readme-wire-frame?node-id=0%3A1)
+- [Project Board](https://github.com/karmacarlos/readme/projects/1)
+- [Architecture Diagram](https://www.figma.com/file/bS3aV4QoMXVFq5SjVcsA4W/Readme-Jam-Board?node-id=0%3A1)
+
+## Illustrations
+![readme_desktop](https://user-images.githubusercontent.com/81398850/142963194-0baa9f1b-ea66-4260-8a1f-82e0d507ebb9.gif)
+
+![readme_mobile](https://user-images.githubusercontent.com/81398850/142963201-27cfccec-7f78-43ab-90bb-0a976d8005e2.gif)
+
+![Screen Shot 2021-11-22 at 7 34 25 PM](https://user-images.githubusercontent.com/81398850/142963291-d93ab153-d8c7-4bd4-89fe-4e5a33fcd06f.png)
 
 ## Wins
 
