@@ -1,5 +1,13 @@
+.landing-page {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 1200px;
+}
+
 .landing-body {
-  width: 45vw;
+  width: 40vw;
   height: 93vh;
   min-width: 500px;
   min-height: 400px;
